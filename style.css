@@ -180,7 +180,12 @@ h4,
     transition: var(--transition);
     position: relative;
     overflow: hidden;
+
+    display: flex;
+    flex-direction: column;
+    height: 100%;
 }
+
 
 .product-card:hover {
     transform: translateY(-10px);
@@ -316,4 +321,5 @@ footer {
     color: var(--text-muted);
 
 }
+
 
