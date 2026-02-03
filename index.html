@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Time Travel Store</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Poppins:wght@400;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+
+<body>
+
+    <nav class="navbar">
+        <div class="logo"><i class="fa-solid fa-hourglass-half"></i> Time Travel Store</div>
+        <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#artifacts">Artifacts</a></li>
+            <li><a href="#about">Paradoxes</a></li>
+        </ul>
+        <div class="cart-icon" onclick="toggleCart()">
+            <i class="fa-solid fa-cart-shopping"></i>
+            <span class="cart-count">0</span>
+        </div>
+    </nav>
+
+    <section class="hero" id="home">
+        <div class="hero-content">
+            <h1>Rewind. Relive. Rewrite.</h1>
+            <p>The premium marketplace for temporal artifacts and retro-tech experiences. Quality guaranteed across all
+                timelines.</p>
+            <button class="cta-btn"
+                onclick="document.getElementById('artifacts').scrollIntoView({behavior: 'smooth'})">Browse
+                Collection</button>
+        </div>
+    </section>
+
+    <section class="products" id="artifacts">
+        <h2 class="section-title">Temporal Artifacts</h2>
+        <div class="product-grid">
+
+            <!-- Product 1: Rotary Telephone -->
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="telephone.png" alt="1955 Rotary Telephone">
+                </div>
+                <div class="product-info">
+                    <h3>1955 Rotary Telephone</h3>
+                    <p>Authentic connectivity. No voicemail, just pure analog signal. Ideal for timeline coordination.
+                    </p>
+                    <span class="price">₮ 1,200</span>
+                    <button class="add-btn" onclick="addToCart('1955 Rotary Telephone')">Add to Cart</button>
+                </div>
+            </div>
+
+            <!-- Product 2: Cassette Tape -->
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="cassette.png" alt="1980s Mix Cassette">
+                </div>
+                <div class="product-info">
+                    <h3>1980s Mix Cassette</h3>
+                    <p>Magnetic memory storage. Comes with a complimentary pencil for rewinding.</p>
+                    <span class="price">₮ 45</span>
+                    <button class="add-btn" onclick="addToCart('1980s Mix Cassette')">Add to Cart</button>
+                </div>
+            </div>
+
+            <!-- Product 3: Portable Tape Recorder -->
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="recorder.png" alt="Journalist Tape Recorder">
+                </div>
+                <div class="product-info">
+                    <h3>Journalist Tape Recorder</h3>
+                    <p>Capture history as it happens. High-fidelity mono recording.</p>
+                    <span class="price">₮ 350</span>
+                    <button class="add-btn" onclick="addToCart('Tape Recorder')">Add to Cart</button>
+                </div>
+            </div>
+
+            <!-- Product 4: Pocket Watch -->
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="watch.png" alt="Victorian Pocket Watch">
+                </div>
+                <div class="product-info">
+                    <h3>Victorian Pocket Watch</h3>
+                    <p>Frozen interaction. Keep track of local time while traversing the fourth dimension.</p>
+                    <span class="price">₮ 5,000</span>
+                    <button class="add-btn" onclick="addToCart('Victorian Pocket Watch')">Add to Cart</button>
+                </div>
+            </div>
+
+            <!-- Product 5: Vintage Camera -->
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="camera.png" alt="Silver Halide Camera">
+                </div>
+                <div class="product-info">
+                    <h3>Silver Halide Camera</h3>
+                    <p>Photos that develop over time. Capture ghosts of the past.</p>
+                    <span class="price">₮ 800</span>
+                    <button class="add-btn" onclick="addToCart('Silver Halide Camera')">Add to Cart</button>
+                </div>
+            </div>
+
+            <!-- Product 6: CRT Monitor -->
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="monitor.png" alt="Green Phosphor CRT">
+                </div>
+                <div class="product-info">
+                    <h3>Green Phosphor CRT</h3>
+                    <p>Radiation included. The glow of the cyber-dawn era.</p>
+                    <span class="price">₮ 250</span>
+                    <button class="add-btn" onclick="addToCart('Green Phosphor CRT')">Add to Cart</button>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 Time Travel Store (formerly CHRONOS). All rights reserved across all timelines.</p>
+    </footer>
+
+    <!-- Notification Toast -->
+    <div class="notification" id="notification">
+        <i class="fa-solid fa-check-circle" style="color: var(--primary);"></i>
+        <div id="notification-msg">Item added to timeline storage.</div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
