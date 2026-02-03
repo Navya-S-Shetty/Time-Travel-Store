@@ -187,6 +187,18 @@ h4,
 }
 
 
+.product-info {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+
+.add-btn {
+    margin-top: auto;
+}
+
+
+
 .product-card:hover {
     transform: translateY(-10px);
     border-color: var(--secondary);
@@ -321,5 +333,6 @@ footer {
     color: var(--text-muted);
 
 }
+
 
 
