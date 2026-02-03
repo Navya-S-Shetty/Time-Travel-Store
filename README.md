@@ -53,7 +53,7 @@ https://navya-s-shetty.github.io/Time-Travel-Store/
 
 ## 👩‍💻 Author
 
-**Navya Shetty**  
+**Navya S Shetty**  
 
 
 Feel free to ⭐ the repo if you like the idea!
